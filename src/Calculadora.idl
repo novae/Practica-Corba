@@ -1,0 +1,11 @@
+module CalculadoraApp
+ {
+	interface Calculadora
+	  {	attribute float num1;
+		attribute float num2;
+		float suma();
+		float resta();
+		float multiplicacion();
+		float division();
+	  };
+  };		
