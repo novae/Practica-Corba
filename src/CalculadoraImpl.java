@@ -44,8 +44,8 @@ public class CalculadoraImpl extends CalculadoraPOA {
     public float division() {
         return num1/num1;
     }
-    // implementacion del metodo shutdown() el cual desconecta el cliente del servidor
+   
     public void shutdown() {
-        orb.shutdown(false);
+        orb.shutdown(false);   
     }
 }
