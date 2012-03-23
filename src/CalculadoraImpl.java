@@ -1,4 +1,3 @@
-
 import CalculadoraApp.*;
 import org.omg.CosNaming.*;
 import org.omg.CosNaming.NamingContextPackage.*;
@@ -10,6 +9,7 @@ import java.util.Properties;
 public class CalculadoraImpl extends CalculadoraPOA {
 
     private ORB orb;
+    private int operacion;
     private float num1,num2,resultado;
 
     
@@ -17,6 +17,7 @@ public class CalculadoraImpl extends CalculadoraPOA {
         num1=0;
         num2=0;
         resultado=0;
+        operacion=-1;
     }
     public void setORB(ORB orb_val) {
         orb = orb_val;
@@ -30,6 +31,14 @@ public class CalculadoraImpl extends CalculadoraPOA {
         num1 = x;
         num2 = y;
     }
+
+    public void setOperacion(int operacion) {
+        this.operacion = operacion;
+    }
+
+    public int getOperacion() {
+        return operacion;
+    } 
 
     public float suma() {
         return num1+num1;
